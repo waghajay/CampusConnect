@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CampusConnect" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/bg_main</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+
+    <style name="Theme.CampusConnect" parent="Base.Theme.CampusConnect" />
+
+    <!-- Native Splash Screen Theme -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/bg_main</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_campus_connect_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.CampusConnect</item>
+    </style>
+</resources>

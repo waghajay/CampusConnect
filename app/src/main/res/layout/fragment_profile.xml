@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:clipToPadding="false"
+    android:paddingBottom="80dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- User Avatar & Identity Header -->
+        <ImageView
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:src="@drawable/ic_event_placeholder"
+            android:background="@drawable/bg_avatar_circle"
+            android:padding="20dp"
+            app:tint="@color/primary"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="Profile Avatar" />
+
+        <TextView
+            android:id="@+id/tvProfileUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="student"
+            android:textSize="15sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvProfileRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROLE: STUDENT"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:background="@drawable/bg_badge_approved"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Form Card Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_rounded"
+            android:padding="20dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Information"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Display Name"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/etProfileDisplayName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Display Name"
+                android:inputType="textPersonName"
+                android:background="@drawable/bg_input_rounded"
+                android:paddingHorizontal="14dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/etProfileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/bg_input_rounded"
+                android:paddingHorizontal="14dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/etProfileDept"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Department"
+                android:inputType="text"
+                android:background="@drawable/bg_input_rounded"
+                android:paddingHorizontal="14dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course / Degree"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/etProfileCourse"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Course / Degree"
+                android:inputType="text"
+                android:background="@drawable/bg_input_rounded"
+                android:paddingHorizontal="14dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Academic Year"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/etProfileYear"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Academic Year"
+                android:inputType="text"
+                android:background="@drawable/bg_input_rounded"
+                android:paddingHorizontal="14dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/btnSaveProfile"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Save Profile Changes"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                app:cornerRadius="12dp" />
+        </LinearLayout>
+
+        <!-- Logout Action Button -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Sign Out"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/status_error"
+            android:textColor="@color/white"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+</ScrollView>

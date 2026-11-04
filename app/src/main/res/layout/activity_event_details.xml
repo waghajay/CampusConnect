@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomBar"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Hero Header Banner -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/bg_hero_gradient"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/tvDetailCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Technical"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:background="@drawable/bg_badge_approved"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="6dp" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDetailCategory"
+                    android:text="Event Title"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="16dp" />
+
+                <TextView
+                    android:id="@+id/tvDetailOrganizer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDetailTitle"
+                    android:text="Organized by Developer Club"
+                    android:textSize="13sp"
+                    android:textColor="#E0E7FF"
+                    android:layout_marginTop="6dp" />
+            </RelativeLayout>
+
+            <!-- Metadata Info Container Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_rounded"
+                android:padding="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="-24dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <!-- Row 1: Date & Time -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_clock"
+                        app:tint="@color/primary"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="Date icon" />
+
+                    <TextView
+                        android:id="@+id/tvDetailDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date: May 10, 2027 (10:00 AM - 01:00 PM)"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary" />
+                </LinearLayout>
+
+                <!-- Row 2: Venue -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_location"
+                        app:tint="@color/primary"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="Venue icon" />
+
+                    <TextView
+                        android:id="@+id/tvDetailVenue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Venue: Lab 101, Main Building"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary" />
+                </LinearLayout>
+
+                <!-- Row 3: Capacity Slots -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_event_placeholder"
+                        app:tint="@color/status_success"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="Slots icon" />
+
+                    <TextView
+                        android:id="@+id/tvDetailCapacity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Available Slots: 15 / 30"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/status_success" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Description Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About This Event"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvDetailDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Event description details..."
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:lineSpacingExtra="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Sticky Bottom Action Bar -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/card_surface"
+        android:elevation="8dp"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Register For Event"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
+            app:cornerRadius="14dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modern Indigo & Violet Palette -->
+    <color name="primary">#5146E5</color>
+    <color name="primary_dark">#3930B5</color>
+    <color name="primary_light">#EEF2FF</color>
+    <color name="secondary">#8B5CF6</color>
+    <color name="secondary_light">#F5F3FF</color>
+
+    <!-- Surfaces & Backgrounds -->
+    <color name="bg_main">#F7F8FC</color>
+    <color name="card_surface">#FFFFFF</color>
+    <color name="divider_border">#E8EAF2</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#171923</color>
+    <color name="text_secondary">#70758A</color>
+    <color name="text_muted">#A0AEC0</color>
+
+    <!-- Status Colors -->
+    <color name="status_success">#16A36A</color>
+    <color name="status_success_bg">#E6F4ED</color>
+    <color name="status_warning">#E8A23A</color>
+    <color name="status_warning_bg">#FEF6E9</color>
+    <color name="status_error">#DC4545</color>
+    <color name="status_error_bg">#FDEAEA</color>
+    <color name="status_info">#3B82F6</color>
+    <color name="status_info_bg">#EFF6FF</color>
+
+    <!-- Legacy Compatibility -->
+    <color name="purple_200">#8B5CF6</color>
+    <color name="purple_500">#5146E5</color>
+    <color name="purple_700">#3930B5</color>
+    <color name="teal_200">#06B6D4</color>
+    <color name="teal_700">#0E7490</color>
+    <color name="black">#171923</color>
+    <color name="white">#FFFFFF</color>
+</resources>
